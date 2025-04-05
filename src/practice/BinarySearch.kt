@@ -22,10 +22,9 @@ class BinarySearch {
     fun execute(nums: List<Int>, target: Int): String {
         var left = 0
         var right = nums.size - 1
-        var middle: Int
 
         while (right - left > 1) {
-            middle = (left + right) / 2
+            val middle = left + (right - left) / 2
             if (numberArray[middle] > target) {
                 right = middle
             } else {

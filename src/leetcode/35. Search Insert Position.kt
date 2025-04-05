@@ -6,7 +6,7 @@ class Solution {
         var right = nums.size - 1
         var ans = -1
         while(left <= right) {
-            val middle = (left + right) / 2
+            val middle = left + (right - left) / 2
             if(nums[middle] == target) {
                 return middle
             }

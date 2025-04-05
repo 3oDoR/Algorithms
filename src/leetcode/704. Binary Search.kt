@@ -10,7 +10,7 @@ fun search(nums: IntArray, target: Int): Int {
     var middle: Int
 
     while(right >= left) {
-        middle = (right + left) / 2
+        middle = left + (right - left) / 2
         if (nums[middle] == target) {
             return middle
         }
