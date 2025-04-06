@@ -1,9 +1,8 @@
-class Solution {
+class Solution34 {
 
     // [ 2, 5, 6, 7, 8, 8, 8, 15 ]      target = 8
     // [ 2, 2, 2, 2, 5, 6, 7, 15 ]      target = 3
     // [ 2, 5, 6, 7, 15 ]      target = 3
-
 
     fun searchRange(nums: IntArray, target: Int): IntArray {
         val result = IntArray(2)
@@ -20,11 +19,9 @@ class Solution {
             val middle = left + (right - left) / 2
             if (nums[middle] > target) {
                 right = middle - 1
-            }
-            else if (nums[middle] < target) {
+            } else if (nums[middle] < target) {
                 left = middle + 1
-            }
-            else {
+            } else {
                 ans = middle
                 right = middle - 1
             }
@@ -41,11 +38,9 @@ class Solution {
             val middle = left + (right - left) / 2
             if (nums[middle] > target) {
                 right = middle - 1
-            }
-            else if (nums[middle] < target) {
+            } else if (nums[middle] < target) {
                 left = middle + 1
-            }
-            else {
+            } else {
                 ans = middle
                 left = middle + 1
             }
