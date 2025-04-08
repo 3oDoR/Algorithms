@@ -1,3 +1,5 @@
+package leetcode
+
 class Solution34 {
 
     // [ 2, 5, 6, 7, 8, 8, 8, 15 ]      target = 8

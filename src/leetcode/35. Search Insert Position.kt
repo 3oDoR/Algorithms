@@ -1,3 +1,5 @@
+package leetcode
+
 class Solution35 {
     fun searchInsert(nums: IntArray, target: Int): Int {
         var left = 0

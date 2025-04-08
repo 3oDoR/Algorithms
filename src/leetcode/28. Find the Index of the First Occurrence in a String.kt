@@ -1,9 +1,6 @@
-fun main() {
-    val solution = Solution()
-    println(solution.strStr("mississippi", "sipp"))
-}
+package leetcode
 
-class Solution {
+class Solution28 {
 
     // sadbutsad  sad
     // sadbutsad  bud
